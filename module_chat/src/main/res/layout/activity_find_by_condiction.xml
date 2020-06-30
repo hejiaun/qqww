@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/listBackground"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/myActionBarSize_40dp"
+        android:background="@color/statusBar"
+        android:padding="6dp">
+
+        <ImageView
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:src="@drawable/icon_mine_ziliao_labelbar_back" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="按条件查询"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/selector_white2gray_12dp"
+        android:clickable="true"
+        android:padding="6dp"></LinearLayout>
+
+    <com.example.administrator.shengdoushi.widget.FunctionItemView
+        android:id="@+id/fivFindByCondition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:clickable="true" />
+
+    <com.example.administrator.shengdoushi.widget.FunctionItemView
+        android:id="@+id/fivFindByRadar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:clickable="true" />
+
+    <com.example.administrator.shengdoushi.widget.FunctionItemView
+        android:id="@+id/fivOrganizeGroupByFace2Face"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:clickable="true" />
+
+    <com.example.administrator.shengdoushi.widget.FunctionItemView
+        android:id="@+id/fivScan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:clickable="true" />
+
+    <com.example.administrator.shengdoushi.widget.FunctionItemView
+        android:id="@+id/fivFindByDirectory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:clickable="true" />
+
+
+</LinearLayout>

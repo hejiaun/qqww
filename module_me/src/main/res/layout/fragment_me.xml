@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/listBackground"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_app_bar" />
+
+    <include layout="@layout/include_personal_information_head" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="10dp"
+        android:background="@color/lineGray" />
+
+    <!--消息列表-->
+    <example.common_base.widget.FunctionItemView
+        android:id="@+id/fivNews"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:fivLeftIcon="@drawable/mine_icon_pinlun"
+        app:fivLeftString="消息列表"
+        app:fivRightIcon="@drawable/common_btn_zhankai" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/lineGray" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="10dp"
+        android:background="@color/lineGray" />
+
+    <!--相册-->
+    <!--<example.common_base.widget.FunctionItemView-->
+        <!--android:id="@+id/fiv_photo"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:clickable="true"-->
+        <!--app:fivLeftIcon="@drawable/mine_icon_pinlun"-->
+        <!--app:fivLeftString="相册"-->
+        <!--app:fivRightIcon="@drawable/common_btn_zhankai" />-->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/lineGray" />
+
+    <!--作品-->
+    <example.common_base.widget.FunctionItemView
+        android:id="@+id/fivWork"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:fivLeftIcon="@drawable/mine_icon_pinlun"
+        app:fivLeftString="作品"
+        app:fivRightIcon="@drawable/common_btn_zhankai" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/lineGray" />
+
+    <!--钱包-->
+    <example.common_base.widget.FunctionItemView
+        android:id="@+id/fiv_wallet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:fivLeftIcon="@drawable/mine_icon_pinlun"
+        app:fivLeftString="音乐币"
+        app:fivRightIcon="@drawable/common_btn_zhankai" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/lineGray" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="10dp"
+        android:background="@color/lineGray" />
+
+    <example.common_base.widget.FunctionItemView
+        android:id="@+id/fivSetting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:fivLeftIcon="@drawable/mine_icon_pinlun"
+        app:fivLeftString="系统设置"
+        app:fivRightIcon="@drawable/common_btn_zhankai" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/lineGray" />
+
+    <!--&lt;!&ndash;个人资料&ndash;&gt;-->
+    <!--<example.common_base.widget.FunctionItemView-->
+    <!--android:id="@+id/fiv_editInformation"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:clickable="true" />-->
+
+
+    <!--&lt;!&ndash;收藏&ndash;&gt;-->
+    <!--<example.common_base.widget.FunctionItemView-->
+    <!--android:id="@+id/fiv_collect"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="1dp"-->
+    <!--android:clickable="true" />-->
+
+</LinearLayout>

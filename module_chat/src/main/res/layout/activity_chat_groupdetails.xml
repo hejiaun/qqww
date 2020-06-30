@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/listBackground"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_app_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rcv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:drawableRight="@drawable/login_btn_xiangxia"
+                        android:drawablePadding="8dp"
+                        android:text="查看更多成员"
+                        android:textColor="@color/fontGray" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!--群聊名称-->
+            <example.common_base.widget.FunctionItemView
+                android:id="@+id/fivGroupName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:clickable="true" />
+            <!--群二维码-->
+            <example.common_base.widget.FunctionItemView
+                android:id="@+id/fivQRCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:clickable="true" />
+            <!--群公告-->
+            <example.common_base.widget.FunctionItemView
+                android:id="@+id/fivGroupNotice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:clickable="true" />
+            <!--我在本群的昵称-->
+            <example.common_base.widget.FunctionItemView
+                android:id="@+id/fivMyGroupNickname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:clickable="true" />
+            <!--显示群成员昵称-->
+            <example.common_base.widget.FunctionItemView
+                android:id="@+id/fivShowMemberNickname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:clickable="true" />
+            <!--顶置聊天-->
+            <example.common_base.widget.FunctionItemView
+                android:id="@+id/fivSetTop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:clickable="true" />
+            <!--消息免打扰-->
+            <example.common_base.widget.FunctionItemView
+                android:id="@+id/fivDontDisturb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:clickable="true" />
+
+            <!--查找聊天内容-->
+            <example.common_base.widget.FunctionItemView
+                android:id="@+id/fivFindChatRecord"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:clickable="true" />
+            <!--设置当前聊天背景-->
+            <example.common_base.widget.FunctionItemView
+                android:id="@+id/fivSetBackground"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:clickable="true" />
+            <!--清空聊天记录-->
+            <example.common_base.widget.FunctionItemView
+                android:id="@+id/fivCleanRecord"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:clickable="true" />
+            <!--投诉-->
+            <example.common_base.widget.FunctionItemView
+                android:id="@+id/fivComplaint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:clickable="true" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

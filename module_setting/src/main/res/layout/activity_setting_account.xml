@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/statusBar"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_app_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/listBackground"
+        android:orientation="vertical">
+
+        <example.common_base.widget.FunctionItemView
+            android:id="@+id/fivAccountName"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="18dp"
+            android:clickable="true" />
+
+        <example.common_base.widget.FunctionItemView
+            android:id="@+id/fivPhone"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="1dp"
+            android:clickable="true" />
+
+        <example.common_base.widget.FunctionItemView
+            android:id="@+id/fivChangePassword"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="1dp"
+            android:clickable="true" />
+
+        <example.common_base.widget.FunctionItemView
+            android:id="@+id/fivChangeEmail"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="18dp"
+            android:clickable="true" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="lineGray">#dad9d9</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="white">#FFF</color>
+    <color name="black">#404040</color>
+    <color name="white_bg">#fdfdfe</color>
+    <color name="statusBar">#fff</color>
+    <color name="navigationSelectTextColor">#DD8AFF</color>
+    <color name="myMessageColor">#9de96a</color>
+    <color name="navigationUnselectTextColor">#e3707070</color>
+    <color name="itemGray">#ebebeb</color>
+    <color name="fontGray">#a2a2a2</color>
+    <color name="homeUnCheck">#fd89fe</color>
+    <color name="homeCheck">#e45cdd</color>
+    <color name="listBackground">#f5f5f5</color>
+    <color name="white_transparent">#65ffffff</color>
+    <color name="white_transparent_more">#2DFFFFFF</color>
+    <color name="purple_transparent">#65726aba</color>
+    <color name="red_select">#fe4646</color>
+    <color name="bule_deep_purple">#1296db</color>
+    <color name="translucent_half_black">#36000000</color>
+    <color name="translucent_little_black">#e5454141</color>
+    <color name="translucent_black">#E80C0303</color>
+    <color name="translucent_little_white">#4dfffbfb</color>
+    <color name="translucent_half_white">#c5fffbfb</color>
+    <color name="background_gray">#EDEDED</color>
+    <color name="gray_press">#EEE1E1</color>
+
+
+    <color name="deep_gray_translucent">#92201f1f</color>
+    <color name="shallow_gray_translucent">#73514f4f</color>
+    <color name="progress_red_bg">#ff4b5a</color>
+    <color name="pink">#da96a9</color>
+    <color name="shallowGray">#e6e6e6</color>
+    <color name="createRoomBlue">#56affe</color>
+    <color name="findRoomPink">#fd6e7b</color>
+
+    <color name="matchRoomColor">#fdb69f</color>
+    <color name="matchRoomChatColor">#dc9882</color>
+    <color name="apprenticeListBackground">#fdb48a</color>
+
+ </resources>

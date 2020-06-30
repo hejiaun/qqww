@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/statusBar"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/myActionBarSize_40dp"
+        android:background="@color/statusBar"
+        android:gravity="center"
+        android:padding="6dp">
+
+        <AutoCompleteTextView
+            android:id="@+id/atv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="6dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_border_white_round_4dp"
+            android:drawableLeft="@drawable/icon_search_gray"
+            android:drawablePadding="6dp"
+            android:paddingLeft="6dp"
+            android:singleLine="true"
+            android:textSize="@dimen/fontSize_12sp" />
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:text="取消"
+            android:textColor="@drawable/selector_font_deep_black"
+            android:textSize="@dimen/fontSize_16sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvFound"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/listBackground"
+        android:text="共找到XX个结果"
+        android:textColor="@color/fontGray"
+        android:textSize="14sp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rcv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/listBackground" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/listBackground"
+        android:clickable="true"
+        android:gravity="center"
+        android:paddingBottom="6dp"
+        android:text="没有找到歌曲？"
+        android:textColor="@drawable/selector_font_deep_purple"
+        android:textSize="14sp" />
+
+</LinearLayout>

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/statusBar"
+    android:fitsSystemWindows="true">
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/stvTitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:sCenterTextSize="18sp"
+        app:sCenterTextString="清理缓存"
+        app:sLeftIconRes="@drawable/common_btn_huila"
+        app:sUseRipple="false" />
+
+    <View
+        android:id="@+id/vBg"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/listBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/stvTitleBar" />
+
+
+    <com.daimajia.swipe.SwipeLayout
+        android:id="@+id/slLoalRecordCache"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:drag_edge="right"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/stvTitleBar">
+
+        <TextView
+            android:id="@+id/tvLocalRecordCache"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/red_select"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="清理"
+            android:textColor="@color/white" />
+
+        <com.allen.library.SuperTextView
+            android:id="@+id/stvLoalRecordCache"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:clickable="true"
+            app:sLeftTextString="本地录音"
+            app:sRightTextColor="@color/fontGray"
+            app:sRightTextString="0.00M"
+            app:sUseRipple="true" />
+
+
+    </com.daimajia.swipe.SwipeLayout>
+
+
+    <com.daimajia.swipe.SwipeLayout
+        android:id="@+id/slPlayCache"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:drag_edge="right"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/slLoalRecordCache">
+
+        <TextView
+            android:id="@+id/tvPlayCache"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/red_select"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="清理"
+            android:textColor="@color/white" />
+
+        <com.allen.library.SuperTextView
+            android:id="@+id/stvPlayCache"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:clickable="true"
+            app:sLeftTextString="播放缓存"
+            app:sRightTextColor="@color/fontGray"
+            app:sRightTextString="0.00M"
+            app:sUseRipple="true" />
+
+
+    </com.daimajia.swipe.SwipeLayout>
+
+
+    <com.daimajia.swipe.SwipeLayout
+        android:id="@+id/slImageCache"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:drag_edge="right"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/slPlayCache">
+
+        <TextView
+            android:id="@+id/tvImageCache"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/red_select"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="清理"
+            android:textColor="@color/white" />
+
+        <com.allen.library.SuperTextView
+            android:id="@+id/stvImageCache"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:clickable="true"
+            app:sLeftTextString="图片缓存"
+            app:sRightTextColor="@color/fontGray"
+            app:sRightTextString="0.00M"
+            app:sUseRipple="true" />
+
+
+    </com.daimajia.swipe.SwipeLayout>
+
+
+    <com.daimajia.swipe.SwipeLayout
+        android:id="@+id/slAccompaniment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:drag_edge="right"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/slImageCache">
+
+        <TextView
+            android:id="@+id/tvAccompaniment"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/red_select"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="清理"
+            android:textColor="@color/white" />
+
+        <com.allen.library.SuperTextView
+            android:id="@+id/stvAccompaniment"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:clickable="true"
+            app:sLeftTextString="伴奏文件"
+            app:sRightTextColor="@color/fontGray"
+            app:sRightTextString="0.00M"
+            app:sUseRipple="true" />
+
+
+    </com.daimajia.swipe.SwipeLayout>
+
+
+    <com.daimajia.swipe.SwipeLayout
+        android:id="@+id/slBookSongCache"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:drag_edge="right"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/slAccompaniment">
+
+        <TextView
+            android:id="@+id/tvBookSongCache"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/red_select"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="清理"
+            android:textColor="@color/white" />
+
+        <com.allen.library.SuperTextView
+            android:id="@+id/stvBookSong"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:clickable="true"
+            app:sLeftTextString="已点歌曲"
+            app:sRightTextColor="@color/fontGray"
+            app:sRightTextString="0.00M"
+            app:sUseRipple="true" />
+
+
+    </com.daimajia.swipe.SwipeLayout>
+
+
+    <TextView
+        android:id="@+id/tvTotalCache"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="共369M缓存"
+        android:textColor="@color/fontGray"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/stvClearAll"
+        app:layout_constraintEnd_toEndOf="@+id/stvClearAll"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/stvClearAll" />
+
+
+    <com.allen.library.SuperButton
+        android:id="@+id/stvClearAll"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="32dp"
+        android:text="全部清理"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stvBookSong"
+        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintWidth_percent="0.5"
+        app:sCornersRadius="1000dp"
+        app:sSelectorNormalColor="#FF4F9E"
+        app:sSelectorPressedColor="@color/fontGray"
+        app:sUseSelector="true" />
+
+
+</android.support.constraint.ConstraintLayout>

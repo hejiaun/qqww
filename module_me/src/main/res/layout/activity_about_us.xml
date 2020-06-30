@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/statusBar"
+    android:fitsSystemWindows="true">
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/stvTitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:sCenterTextSize="18sp"
+        app:sCenterTextString="关于我们"
+        app:sLeftIconRes="@drawable/common_btn_huila"
+        app:sUseRipple="false" />
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="60dp"
+        android:src="@mipmap/logo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/stvTitleBar" />
+
+    <TextView
+        android:id="@+id/tvMotto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="声斗士宣传语"
+        android:textColor="@color/fontGray"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivLogo" />
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/stv1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toTopOf="@id/stv2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/stv2"
+        app:sBottomDividerLineMarginLeft="10dp"
+        app:sBottomDividerLineMarginRight="10dp"
+        app:sLeftTextString="给声斗士打个分鼓励一下吧"
+        app:sRightIconRes="@drawable/common_btn_zhankai"
+        app:sUseRipple="true" />
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/stv2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toTopOf="@id/tvProtocol"
+        app:layout_constraintTop_toBottomOf="@+id/tvMotto"
+        app:sBottomDividerLineMarginLeft="10dp"
+        app:sBottomDividerLineMarginRight="10dp"
+        app:sLeftTextString="功能介绍"
+        app:sRightIconRes="@drawable/common_btn_zhankai"
+        app:sUseRipple="true"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/stv3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stv2"
+        app:sBottomDividerLineMarginLeft="10dp"
+        app:sBottomDividerLineMarginRight="10dp"
+        app:sLeftTextString="版本更新"
+        app:sRightIconRes="@drawable/common_btn_zhankai"
+        app:sUseRipple="true" />
+
+    <TextView
+        android:id="@+id/tvProtocol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ripple_gray2white"
+        android:clickable="true"
+        android:text="@string/about_us_protocol"
+        android:textColor="@drawable/selector_font_blue2white"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@id/tv1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/about_us_statement1"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@id/tv2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="@string/about_us_statement2"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

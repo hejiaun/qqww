@@ -1,0 +1,179 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="6dp">
+    <!--歌词-->
+    <me.wcy.lrcview.LrcView
+        android:visibility="invisible"
+        android:id="@+id/lrcView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/shape_lrcv_bg"
+        app:layout_constraintBottom_toTopOf="@+id/rcv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:lrcCurrentTextColor="@color/red_select"
+        app:lrcNormalTextColor="@color/white"
+        app:lrcTextSize="18sp" />
+
+    <View
+        android:id="@+id/maskView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/shape_lrcv_bg"
+        app:layout_constraintBottom_toBottomOf="@id/lrcView"
+        app:layout_constraintLeft_toLeftOf="@id/lrcView"
+        app:layout_constraintRight_toRightOf="@id/lrcView"
+        app:layout_constraintTop_toTopOf="@id/lrcView" />
+
+    <com.example.module_pk.widget.RaterVoteButton
+        android:id="@+id/rb1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/lrcView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/lrcView"
+        app:rbHeadResource="@drawable/yizhen"
+        app:rbName="陈绮贞" />
+
+    <com.example.module_pk.widget.RaterVoteButton
+        android:id="@+id/rb2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/rb1"
+        app:layout_constraintEnd_toEndOf="@+id/rb1"
+        app:layout_constraintStart_toStartOf="@+id/rb1"
+        app:rbHeadResource="@drawable/yizhen"
+        app:rbName="陈绮贞" />
+
+    <com.example.module_pk.widget.RaterVoteButton
+        android:id="@+id/rb3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/rb1"
+        app:layout_constraintStart_toStartOf="@+id/rb1"
+        app:layout_constraintTop_toBottomOf="@+id/rb1"
+        app:rbHeadResource="@drawable/xueyou"
+        app:rbName="张学友" />
+
+    <ProgressBar
+        android:id="@+id/pb"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:minWidth="20dp"
+        android:progress="50"
+        android:progressDrawable="@drawable/layer_list_progressbar_vertiacal"
+        app:layout_constraintBottom_toTopOf="@+id/ivFire"
+        app:layout_constraintEnd_toEndOf="@+id/tvVote"
+        app:layout_constraintStart_toStartOf="@+id/tvVote"
+        app:layout_constraintTop_toBottomOf="@+id/tvVote" />
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/ivCurrentSingerHead"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:clickable="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/yizhen"
+        app:layout_constraintBottom_toTopOf="@+id/tvVote"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:riv_corner_radius="1000dp" />
+
+    <TextView
+        android:id="@+id/tvVote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="人气\n156"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/ivCurrentSingerHead"
+        app:layout_constraintStart_toStartOf="@+id/ivCurrentSingerHead"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivFire"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_ziliao_luxiang_duizhan_renqizhi"
+        app:layout_constraintBottom_toTopOf="@+id/rcv"
+        app:layout_constraintEnd_toEndOf="@+id/tvVote"
+        app:layout_constraintStart_toStartOf="@+id/tvVote" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rcv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dp"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toTopOf="@+id/tvChat"
+        app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="0.75" />
+
+    <TextView
+        android:id="@+id/tvChat"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@drawable/shape_circle_translucent"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="6dp"
+        android:text="聊"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvFontSetting"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_toRightOf="@id/tvChat"
+        android:background="@drawable/shape_circle_translucent"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="6dp"
+        android:text="字"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/tvChat"
+        app:layout_constraintStart_toEndOf="@+id/tvChat"
+        app:layout_constraintTop_toTopOf="@+id/tvChat" />
+
+    <TextView
+        android:id="@+id/tvGift"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/shape_circle_translucent"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="6dp"
+        android:text="礼"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/tvFontSetting"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvFontSetting" />
+
+
+</android.support.constraint.ConstraintLayout>
+
+
+

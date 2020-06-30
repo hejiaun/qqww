@@ -1,0 +1,274 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <View
+        android:id="@+id/viewInformation"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/ripple_gray2white"
+        android:clickable="true"
+        app:layout_constraintBottom_toTopOf="@id/line"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/ivHead"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:elevation="2dp"
+        android:foreground="@drawable/selector_foreground_gray_round"
+        android:scaleType="centerCrop"
+        android:src="@drawable/xueyou"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:riv_corner_radius="6dp" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/ivHead"
+        android:clickable="true"
+        android:drawablePadding="2dp"
+        android:text="我我我我"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvUserId"
+        app:layout_constraintStart_toEndOf="@+id/ivHead"
+        app:layout_constraintTop_toTopOf="@+id/ivHead" />
+
+    <ImageView
+        android:id="@+id/ivSex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:src="@drawable/icon_mine_man"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_name"
+        app:layout_constraintStart_toEndOf="@+id/tv_name"
+        app:layout_constraintTop_toTopOf="@+id/tv_name" />
+
+    <ImageView
+        android:id="@+id/ivVip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:src="@drawable/icon_mine_man"
+        app:layout_constraintBottom_toBottomOf="@+id/ivSex"
+        app:layout_constraintStart_toEndOf="@+id/ivSex"
+        app:layout_constraintTop_toTopOf="@+id/ivSex" />
+
+    <TextView
+        android:id="@+id/tvUserId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="1dp"
+        android:text="声斗士号:5165156"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvLevel"
+        app:layout_constraintStart_toEndOf="@+id/ivHead"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+
+    <TextView
+        android:id="@+id/tvLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="等级"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/pbExperience"
+        app:layout_constraintStart_toEndOf="@+id/ivHead"
+        app:layout_constraintTop_toBottomOf="@+id/tvUserId" />
+
+    <ProgressBar
+        android:id="@+id/pbExperience"
+        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/tvLevel"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_toRightOf="@id/tvLevel"
+        android:minHeight="10dp"
+        android:progress="30"
+        android:progressDrawable="@drawable/layer_list_progressbar_experience"
+        app:layout_constraintBottom_toBottomOf="@+id/ivHead"
+        app:layout_constraintEnd_toStartOf="@+id/tvExperienceProgress"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/ivHead"
+        app:layout_constraintTop_toBottomOf="@+id/tvLevel" />
+
+    <TextView
+        android:id="@+id/tvExperienceProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:text="123/480"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/pbExperience"
+        app:layout_constraintEnd_toStartOf="@+id/ivRight"
+        app:layout_constraintTop_toTopOf="@+id/pbExperience" />
+
+    <ImageView
+        android:id="@+id/ivRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/common_btn_zhankai"
+        app:layout_constraintBottom_toBottomOf="@+id/ivHead"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ivHead" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/lineGray"
+        app:layout_constraintTop_toBottomOf="@id/tvExperienceProgress" />
+
+    <LinearLayout
+        android:id="@+id/llPopularity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ripple_gray2white"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/line"
+        app:layout_constraintWidth_percent="0.25">
+
+        <TextView
+            android:id="@+id/tvPopularity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="123234"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="人气" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llFollow"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ripple_gray2white"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/llPopularity"
+        app:layout_constraintLeft_toRightOf="@id/llPopularity"
+        app:layout_constraintTop_toBottomOf="@id/line"
+        app:layout_constraintWidth_percent="0.25">
+
+        <TextView
+            android:id="@+id/tvFollow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="42312"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关注" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llfans"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ripple_gray2white"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/llFollow"
+        app:layout_constraintLeft_toRightOf="@id/llFollow"
+        app:layout_constraintTop_toBottomOf="@id/line"
+        app:layout_constraintWidth_percent="0.25">
+
+        <TextView
+            android:id="@+id/tvFans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6563"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="粉丝" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llListener"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ripple_gray2white"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/llfans"
+        app:layout_constraintLeft_toRightOf="@id/llfans"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/line"
+        app:layout_constraintWidth_percent="0.25">
+
+        <TextView
+            android:id="@+id/tvListener"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="123123"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="收听" />
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

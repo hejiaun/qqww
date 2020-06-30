@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="12dp"
+    android:paddingTop="12dp">
+
+    <ImageView
+        android:id="@+id/iv_mode"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:src="@drawable/gequxiangqing_btn_danquxunhuan" />
+
+    <ImageView
+        android:id="@+id/iv_pre"
+
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:src="@drawable/icon_gequxiangqing_shangyiqu" />
+
+    <ImageView
+        android:id="@+id/iv_play"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:src="@drawable/gequxiangqing_btn_zanting" />
+
+    <ImageView
+        android:id="@+id/iv_next"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:src="@drawable/icon_gequxiangqing_xiayiqu" />
+
+    <LinearLayout
+        android:id="@+id/ll_right"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!--<TextView-->
+        <!--android:id="@+id/btn_mixer"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:background="@drawable/shape_deepgray_round8dp"-->
+        <!--android:clickable="true"-->
+        <!--android:padding="@dimen/buttonTextPadding_4dp"-->
+        <!--android:text="  调音台  "-->
+        <!--android:textColor="@color/white"-->
+        <!--android:textSize="10sp" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/btn_practice_song"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_below="@id/btn_mixer"-->
+        <!--android:layout_marginBottom="4dp"-->
+        <!--android:layout_marginTop="4dp"-->
+        <!--android:background="@drawable/shape_deepgray_round8dp"-->
+        <!--android:clickable="true"-->
+        <!--android:padding="@dimen/buttonTextPadding_4dp"-->
+        <!--android:text="  练声曲  "-->
+        <!--android:textColor="@color/white"-->
+        <!--android:textSize="10sp" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/btn_practice_mode"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_below="@id/btn_practice_song"-->
+        <!--android:background="@drawable/shape_deepgray_round8dp"-->
+        <!--android:clickable="true"-->
+        <!--android:padding="@dimen/buttonTextPadding_4dp"-->
+        <!--android:text="学歌模式"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:textSize="10sp" />-->
+    </LinearLayout>
+</LinearLayout>

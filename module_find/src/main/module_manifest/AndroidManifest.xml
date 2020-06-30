@@ -1,0 +1,16 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.module_find">
+
+    <application>
+        <activity
+            android:name=".activity.FindNearbyActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.MusicCircleActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.MusicCircleNewsActivity"
+            android:launchMode="singleInstance" />
+    </application>
+
+</manifest>

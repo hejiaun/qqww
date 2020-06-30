@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.flexbox.FlexboxLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_card_round_white"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    app:alignItems="center"
+    app:flexDirection="row"
+    app:flexWrap="wrap"
+    app:justifyContent="flex_start">
+
+    <LinearLayout
+        android:id="@+id/llShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_flexBasisPercent="25%">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_search_white_round_6dp"
+            android:padding="4dp"
+            android:src="@drawable/share_btn_fenxiang" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分享"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llDownload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_flexBasisPercent="25%">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_search_white_round_6dp"
+            android:padding="4dp"
+            android:src="@drawable/share_btn_xiazai" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="下载"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llSetTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_flexBasisPercent="25%">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_search_white_round_6dp"
+            android:padding="4dp"
+            android:src="@drawable/share_btn_zhiding" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="置顶"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_flexBasisPercent="25%">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_search_white_round_6dp"
+            android:padding="4dp"
+            android:src="@drawable/share_btn_bianji" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="编辑"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llPirvate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_flexBasisPercent="25%">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_search_white_round_6dp"
+            android:padding="4dp"
+            android:src="@drawable/share_btn_simi" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设为私密"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_flexBasisPercent="25%">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_search_white_round_6dp"
+            android:padding="4dp"
+            android:src="@drawable/share_btn_shanchu" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="删除"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+
+    <!--<TextView-->
+    <!--android:id="@+id/tvShare"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginBottom="10dp"-->
+    <!--android:background="@drawable/shape_round_textview"-->
+    <!--android:drawableTop="@drawable/share_btn_fenxiang"-->
+    <!--android:gravity="center"-->
+    <!--android:text="QQ"-->
+    <!--app:layout_flexBasisPercent="25%" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginBottom="10dp"-->
+    <!--android:drawableTop="@drawable/fenxiang_icon_yinyuequan"-->
+    <!--android:gravity="center"-->
+    <!--android:text="QQ"-->
+    <!--app:layout_flexBasisPercent="25%" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginBottom="10dp"-->
+    <!--android:drawableTop="@drawable/fenxiang_icon_yinyuequan"-->
+    <!--android:gravity="center"-->
+    <!--android:text="QQ"-->
+    <!--app:layout_flexBasisPercent="25%" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginBottom="10dp"-->
+    <!--android:drawableTop="@drawable/fenxiang_icon_yinyuequan"-->
+    <!--android:gravity="center"-->
+    <!--android:text="QQ"-->
+    <!--app:layout_flexBasisPercent="25%" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginBottom="10dp"-->
+    <!--android:drawableTop="@drawable/fenxiang_icon_yinyuequan"-->
+    <!--android:gravity="center"-->
+    <!--android:text="QQ"-->
+    <!--app:layout_flexBasisPercent="25%" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginBottom="10dp"-->
+    <!--android:drawableTop="@drawable/fenxiang_icon_yinyuequan"-->
+    <!--android:gravity="center"-->
+    <!--android:text="QQ"-->
+    <!--app:layout_flexBasisPercent="25%" />-->
+
+
+</com.google.android.flexbox.FlexboxLayout>

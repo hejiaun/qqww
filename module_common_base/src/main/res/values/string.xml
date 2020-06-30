@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">声斗士</string>
+    <string name="speace_name">http://schemas.android.com/apk/res/com.example.administrator.shengdoushi</string>
+    <string name="aa">222</string>
+    <string name="numberAndLetter">0123456789abcdefghigklmnopqrstuvwxyz</string>
+    <string name="crashMessage">程序发生异常\n抱歉，给您带来不便</string>
+    <string name="already_read_agreement">已阅读《声斗士服务及隐私协议》</string>
+    <string name="logout">退出登录</string>
+</resources>

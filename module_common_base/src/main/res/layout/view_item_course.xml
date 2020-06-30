@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/ivHead"
+        android:layout_width="@dimen/famousListImageSize_44dp"
+        android:layout_height="@dimen/famousListImageSize_44dp"
+        android:background="@drawable/example"
+        app:riv_border_color="@color/black"
+        app:riv_border_width="1dp" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="黑泽明"
+        android:textSize="@dimen/fontSize_12sp" />
+
+    <TextView
+        android:id="@+id/tv_courseNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="总/剩:10/3"
+        android:textSize="@dimen/fontSize_10sp" />
+</LinearLayout>

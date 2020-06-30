@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivWallBackgroudn"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/pipei_mode_bg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvText"
+                style="@style/ScreenTagStyle"
+                android:background="@drawable/shape_edittext_deep_bg"
+                android:text="文字"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/tvPhoto"
+                style="@style/ScreenTagStyle"
+                android:background="@drawable/shape_edittext_deep_bg"
+                android:text="照片"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/tvWork"
+                style="@style/ScreenTagStyle"
+                android:background="@drawable/shape_edittext_deep_bg"
+                android:text="作品"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/tvTransmit"
+                style="@style/ScreenTagStyle"
+                android:background="@drawable/shape_edittext_deep_bg"
+                android:text="转载"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/tvCourse"
+                style="@style/ScreenTagStyle"
+                android:background="@drawable/shape_edittext_deep_bg"
+                android:text="教学"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/ivHead"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="204dp"
+        android:layout_marginRight="16dp"
+        android:clickable="true"
+        android:foreground="@drawable/selector_foreground_gray_round"
+        android:src="@drawable/example"
+        app:riv_border_color="@color/white"
+        app:riv_border_width="1dp"
+        app:riv_corner_radius="6dp" />
+
+
+    <TextView
+        android:id="@+id/tvIntroduction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivHead"
+        android:layout_alignRight="@id/ivHead"
+        android:layout_marginTop="2dp"
+        android:gravity="left"
+        android:maxEms="20"
+        android:text="谁是最强声斗士!!" />
+
+
+</RelativeLayout>

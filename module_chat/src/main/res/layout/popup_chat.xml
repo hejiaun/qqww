@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_border_white_round_8dp"
+    android:elevation="2dp"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tvAddFriend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:drawableLeft="@drawable/chat_icon_add"
+        android:drawablePadding="4dp"
+        android:padding="16dp"
+        android:text="添加朋友"
+        android:textColor="@drawable/selector_font_deep_black" />
+
+    <TextView
+        android:id="@+id/tvScan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:drawableLeft="@drawable/chat_icon_add"
+        android:drawablePadding="6dp"
+        android:padding="16dp"
+        android:paddingLeft="8dp"
+        android:paddingTop="2dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="2dp"
+        android:text="扫一扫"
+        android:textColor="@drawable/selector_font_deep_black" />
+
+    <TextView
+        android:id="@+id/tvGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:drawableLeft="@drawable/chat_icon_add"
+        android:drawablePadding="4dp"
+        android:padding="16dp"
+        android:paddingLeft="8dp"
+        android:paddingTop="2dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="2dp"
+        android:text="发起群聊"
+        android:textColor="@drawable/selector_font_deep_black" />
+
+</LinearLayout>

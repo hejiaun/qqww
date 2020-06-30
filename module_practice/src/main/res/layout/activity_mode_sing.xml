@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/duchang_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_songname_titlebar" />
+
+    <com.flyco.tablayout.CommonTabLayout
+        android:id="@+id/ctl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:tl_indicator_color="@color/transparent"></com.flyco.tablayout.CommonTabLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btn_sing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/shape_round_login_y"
+            android:text="开始"
+            android:textColor="@drawable/selector_font_shallow"
+            android:textSize="@dimen/fontSize_16sp" />
+    </RelativeLayout>
+</LinearLayout>

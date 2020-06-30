@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/listBackground"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/myActionBarSize_40dp"
+        android:background="@color/listBackground"
+        android:elevation="2dp"
+        android:gravity="center"
+        android:padding="6dp">
+
+        <AutoCompleteTextView
+            android:id="@+id/atv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="6dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_border_white_round_4dp"
+            android:drawableLeft="@drawable/icon_search_gray"
+            android:drawablePadding="6dp"
+            android:paddingLeft="6dp"
+            android:singleLine="true"
+            android:textSize="@dimen/fontSize_12sp" />
+
+        <TextView
+            android:id="@+id/tvCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:text="取消"
+            android:textColor="@drawable/selector_font_deep_black"
+            android:textSize="@dimen/fontSize_16sp" />
+
+    </LinearLayout>
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:flexDirection="row"
+        app:flexWrap="wrap"
+        app:justifyContent="flex_start">
+
+        <TextView
+            android:textColor="@drawable/selector_font_deep_black"
+            style="@style/SearchTagStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_border_white_round_8dp"
+            android:text="朋友"
+            android:textSize="14sp" />
+
+        <TextView
+            android:textColor="@drawable/selector_font_deep_black"
+            style="@style/SearchTagStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_border_white_round_8dp"
+            android:text="群聊"
+            android:textSize="14sp" />
+
+        <TextView
+            android:textColor="@drawable/selector_font_deep_black"
+            style="@style/SearchTagStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_border_white_round_8dp"
+            android:text="聊天记录"
+            android:textSize="14sp" />
+
+
+    </com.google.android.flexbox.FlexboxLayout>
+
+</LinearLayout>

@@ -1,0 +1,43 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.module_account">
+
+    <application>
+        <activity
+            android:name=".activity.ArtificialEmailActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.ArtificialFormActivity"
+            android:launchMode="singleTop"
+       />
+        <activity
+            android:name=".activity.ArtificialLoginBySmsActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.ArtificialQuestion1Activity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.ArtificialQuestion2Activity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.ArtificialResultActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.ForgetPwdActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.SetPasswordActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.RetrievePasswordByEmailActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.FeedBackActivity"
+            android:launchMode="singleInstance" />
+        <!--<activity-->
+        <!--android:name=".activity.ValidateCodeLoginActivity"-->
+        <!--android:launchMode="singleTop" />-->
+    </application>
+</manifest>

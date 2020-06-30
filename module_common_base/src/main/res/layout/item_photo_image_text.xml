@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp">
+
+
+    <include layout="@layout/include_photo_date" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:clickable="true"
+        android:foreground="@drawable/selector_foreground_gray">
+
+        <!--图片加文本-->
+
+        <com.lqr.ninegridimageview.LQRNineGridImageView
+            android:id="@+id/iv9"
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:background="@drawable/example" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text="666"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+
+</LinearLayout>

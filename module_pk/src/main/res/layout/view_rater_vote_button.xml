@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/ivHead"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_toLeftOf="@id/tvVote"
+        android:clickable="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/example"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:riv_border_color="@color/fontGray"
+        app:riv_border_width="1dp"
+        app:riv_corner_radius="30dp" />
+
+    <TextView
+        android:id="@+id/tvVote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="2dp"
+        android:background="@drawable/shape_button_rater"
+        android:clickable="true"
+        android:elevation="2dp"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingTop="16dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="16dp"
+        android:text="I WANT YOU!"
+        android:textColor="@color/white"
+        android:textSize="@dimen/fontSize_16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/ivHead"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="36dp"
+        android:elevation="2dp"
+        android:src="@drawable/paly_icon_dianji"
+        app:layout_anchor="@+id/tvVote"
+        app:layout_anchorGravity="right|bottom"
+        app:layout_constraintEnd_toEndOf="@+id/tvVote"
+        app:layout_constraintTop_toTopOf="@+id/tvVote" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="名称"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/ivHead"
+        app:layout_constraintStart_toStartOf="@+id/ivHead"
+        app:layout_constraintTop_toBottomOf="@+id/ivHead" />
+
+</android.support.constraint.ConstraintLayout>

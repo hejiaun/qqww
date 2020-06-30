@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#37ffffff"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/myActionBarSize_40dp"
+        android:background="@drawable/shape_title_purple"
+        android:padding="6dp"
+        app:contentInsetStart="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_search"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_bg_shallow"
+                android:clickable="true"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_remcommend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/home_icon_sousuo"
+                    android:drawablePadding="2dp"
+                    android:text="推荐歌曲"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_hot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/shape_round_white_border"
+                android:clickable="true"
+                android:gravity="center"
+                android:paddingLeft="4dp"
+                android:paddingTop="2dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:text="热门"
+                android:textColor="@drawable/selector_font_shallow"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_strongest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_round_white_border"
+                android:clickable="true"
+                android:gravity="center"
+                android:paddingLeft="4dp"
+                android:paddingTop="2dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:text="最强"
+                android:textColor="@drawable/selector_font_shallow"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <com.flyco.tablayout.CommonTabLayout
+        android:id="@+id/ctl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        app:tl_iconVisible="false"
+        app:tl_indicator_color="@color/red_select"
+        app:tl_indicator_corner_radius="4dp"
+        app:tl_indicator_height="2dp"
+        app:tl_indicator_style="NORMAL"
+        app:tl_indicator_width="20dp"
+        app:tl_textSelectColor="@color/red_select"
+        app:tl_textUnselectColor="@color/black"
+        app:tl_textsize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="44dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="排位"
+            android:textSize="@dimen/fontSize_12sp" />
+
+        <!--<TextView-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"-->
+        <!--android:gravity="center_horizontal"-->
+        <!--android:text="名师"-->
+        <!--android:textSize="@dimen/fontSize_12sp" />-->
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="单曲"
+            android:textSize="@dimen/fontSize_12sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="评委"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="人气"
+            android:textSize="@dimen/fontSize_12sp" />
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rcv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:scrollbars="none" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom">
+
+            <LinearLayout
+                android:id="@+id/ll_menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="26dp"
+                    android:background="#d4ffffff"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="44dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/example"
+                            app:riv_border_color="#a2a2a2"
+                            app:riv_border_width="1dp"
+                            app:riv_corner_radius="2dp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="66"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/fontSize_12sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="66"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/fontSize_12sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="66"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/fontSize_12sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="66"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/fontSize_12sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="66"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/fontSize_12sp" />
+
+
+                </LinearLayout>
+
+                <com.google.android.flexbox.FlexboxLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="142dp"
+                    android:background="#f7ffffff"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
+                    app:flexWrap="wrap">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        app:layout_flexBasisPercent="50%">
+
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            android:id="@+id/ivRater"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:background="@drawable/shape_statusbarcolor_round_6dp"
+                            android:clickable="true"
+                            android:foreground="@drawable/selector_foreground_gray_round"
+                            android:padding="10dp"
+                            android:src="@drawable/home_icon_pingwei" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="评委模式"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        app:layout_flexBasisPercent="50%">
+
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            android:id="@+id/ivPk"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:background="@drawable/shape_statusbarcolor_round_6dp"
+                            android:clickable="true"
+                            android:foreground="@drawable/selector_foreground_gray_round"
+                            android:padding="10dp"
+                            android:src="@drawable/home_icon_pkmoshi" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="PK模式"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        app:layout_flexBasisPercent="50%">
+
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            android:id="@+id/ivTask"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:background="@drawable/shape_statusbarcolor_round_6dp"
+                            android:clickable="true"
+                            android:foreground="@drawable/selector_foreground_gray_round"
+                            android:padding="10dp"
+                            android:src="@drawable/home_icon_renwu" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="任务"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        app:layout_flexBasisPercent="50%">
+
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            android:id="@+id/ivPractice"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:background="@drawable/shape_statusbarcolor_round_6dp"
+                            android:clickable="true"
+                            android:foreground="@drawable/selector_foreground_gray_round"
+                            android:padding="10dp"
+                            android:src="@drawable/home_icon_liangefang" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="练歌房"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/tvRater"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:clickable="true"-->
+                    <!--android:drawableTop="@drawable/selector_rater"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="评委模式"-->
+                    <!--android:textColor="@color/black"-->
+                    <!--android:textSize="@dimen/fontSize_12sp"-->
+                    <!--app:layout_flexBasisPercent="50%" />-->
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/tvPk"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:clickable="true"-->
+                    <!--android:drawableTop="@drawable/selector_pk"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="PK模式"-->
+                    <!--android:textColor="@color/black"-->
+                    <!--android:textSize="@dimen/fontSize_12sp"-->
+                    <!--app:layout_flexBasisPercent="50%" />-->
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/tvTask"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+
+                    <!--android:clickable="true"-->
+                    <!--android:drawableTop="@drawable/selector_task"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="任务"-->
+                    <!--android:textColor="@color/black"-->
+                    <!--android:textSize="@dimen/fontSize_12sp"-->
+                    <!--app:layout_flexBasisPercent="50%" />-->
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/tvPractice"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:clickable="true"-->
+                    <!--android:drawableTop="@drawable/selector_practice"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="练歌房"-->
+                    <!--android:textColor="@color/black"-->
+                    <!--android:textSize="@dimen/fontSize_12sp"-->
+                    <!--app:layout_flexBasisPercent="50%" />-->
+
+
+                </com.google.android.flexbox.FlexboxLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+</LinearLayout>

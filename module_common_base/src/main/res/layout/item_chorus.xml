@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/rl_head"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/ivHead"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:src="@drawable/example"
+                    app:riv_corner_radius="44dp" />
+
+                <TextView
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:layout_alignRight="@id/ivHead"
+                    android:layout_alignBottom="@id/ivHead"
+                    android:background="@drawable/shape_round_white_border_red_corner8dp"
+                    android:gravity="center"
+                    android:text="22"
+                    android:textColor="#ff4b5a"
+                    android:textSize="8sp" />
+
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/iv_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/tv_name"
+                android:layout_marginRight="4dp"
+                android:layout_toRightOf="@id/rl_head"
+                android:src="@drawable/icon_fensibangdan_man" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/tvGoodRate"
+                android:layout_alignTop="@id/tv_name"
+                android:layout_marginBottom="4dp"
+                android:clickable="true"
+                android:text="我我我我"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvGoodRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_name"
+                android:layout_marginRight="4dp"
+                android:layout_toRightOf="@id/iv_sex"
+                android:background="@drawable/shape_border_white_round_4dp"
+                android:clickable="true"
+                android:padding="2dp"
+                android:text="段位"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_getValidateCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_name"
+                android:layout_toRightOf="@id/tvGoodRate"
+                android:background="@drawable/shape_border_white_round_4dp"
+                android:clickable="true"
+                android:padding="2dp"
+                android:text="星级"
+                android:textSize="14sp" />
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/btnChorusSing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="2dp"
+            android:background="@drawable/shape_border_white_round_4dp"
+            android:clickable="true"
+            android:padding="6dp"
+            android:text="合唱"
+            android:textColor="@drawable/selector_font_deep_black"
+            android:textSize="@dimen/sp_14" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginBottom="6dp"
+        android:text="描述------"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:background="@color/listBackground">
+
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/ivCover"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/example"
+            app:riv_corner_radius="4dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:orientation="vertical"
+            android:paddingTop="4dp"
+            android:paddingRight="4dp"
+            android:paddingBottom="4dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvCourseName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="《拥抱》"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <com.example.administrator.shengdoushi.widget.Tab
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="02-24 12:45 发布"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tvChorusNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="有12人合唱过" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2dp"
+                    android:drawableLeft="@drawable/icon_fensibangdan_flower"
+                    android:text="1.3W"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="2dp"
+                    android:drawableLeft="@drawable/icon_fensibangdan_flower"
+                    android:text="1.3W"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2dp"
+                    android:drawableLeft="@drawable/icon_fensibangdan_flower"
+                    android:text="1.3W"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="2dp"
+                    android:drawableLeft="@drawable/icon_fensibangdan_flower"
+                    android:text="1.3W"
+                    android:textSize="12sp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

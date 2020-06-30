@@ -1,0 +1,145 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.module_pk.widget.PlayerIncomeView
+        android:id="@+id/pivPlayer1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:pivHeadResource="@drawable/yizhen"
+        app:pivName="陈绮贞" />
+
+    <com.example.module_pk.widget.RatingHeadView
+        android:id="@+id/rhv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toTopOf="@+id/pivPlayer2"
+        app:layout_constraintEnd_toStartOf="@+id/rhv2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pivPlayer1"
+        app:rhvAllTextColor="@color/white"
+        app:rhvHeadResource="@drawable/jielun"
+        app:rhvName="周杰伦" />
+
+    <com.example.module_pk.widget.RatingHeadView
+        android:id="@+id/rhv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toTopOf="@+id/pivPlayer2"
+        app:layout_constraintEnd_toStartOf="@+id/rhv3"
+        app:layout_constraintStart_toEndOf="@+id/rhv1"
+        app:layout_constraintTop_toBottomOf="@+id/pivPlayer1"
+        app:rhvAllTextColor="@color/white"
+        app:rhvHeadResource="@drawable/wanfeng"
+        app:rhvName="汪峰" />
+
+    <com.example.module_pk.widget.RatingHeadView
+        android:id="@+id/rhv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toTopOf="@+id/pivPlayer2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/rhv2"
+        app:layout_constraintTop_toBottomOf="@+id/pivPlayer1"
+        app:pivName="陈绮贞"
+        app:rhvAllTextColor="@color/white"
+        app:rhvHeadResource="@drawable/yangkun"
+        app:rhvName="杨坤" />
+
+    <com.example.module_pk.widget.PlayerIncomeView
+        android:id="@+id/pivPlayer2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@id/ivVoice"
+        app:pivHeadResource="@drawable/xueyou"
+        app:pivName="张学友"
+        tools:layout_editor_absoluteX="4dp" />
+
+    <TextView
+        android:id="@+id/tvChat"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/shape_circle_translucent"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="聊"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/ivVoice"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvFontSetting"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/shape_circle_translucent"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="6dp"
+        android:text="字"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/ivVoice"
+        app:layout_constraintStart_toEndOf="@+id/tvChat" />
+
+    <TextView
+        android:id="@+id/tvStopRating"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="6dp"
+        android:text="结束点评"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/ivVoice"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivVoice"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/play_btn_speak"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rcvBarrage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="8dp"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toTopOf="@+id/tvFontSetting"
+        app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="0.75" />
+
+</android.support.constraint.ConstraintLayout>

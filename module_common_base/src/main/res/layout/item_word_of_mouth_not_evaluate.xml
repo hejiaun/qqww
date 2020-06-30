@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!--作品-->
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp">
+
+        <LinearLayout
+            android:id="@+id/llCourse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp">
+
+            <ImageView
+                android:id="@+id/ivCover"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="6dp"
+                android:background="@color/fontGray" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="声乐1对1 90分钟 （ 第4课时）"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tvAuthor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="晨曦"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tvTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="08-21  14：00"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/btnEvaluate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/shape_border_white_round_4dp"
+            android:clickable="true"
+            android:padding="6dp"
+            android:text="评价"
+            android:textColor="@drawable/selector_font_deep_black"
+            android:textSize="@dimen/fontSize_12sp" />
+
+    </RelativeLayout>
+
+    <!--学生评论-->
+    <RelativeLayout
+        android:id="@+id/rlStudent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/ivStudentHead"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_marginRight="4dp"
+            android:src="@drawable/example"
+            app:riv_corner_radius="18dp" />
+
+        <LinearLayout
+            android:id="@+id/llStudent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/ivStudentHead"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvStudentName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="学生名称"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tvStudentEvaluateTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="学生评价  08-12  14:00"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvStudentEvaluate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llStudent"
+            android:layout_marginTop="12dp"
+            android:text="这个老师上课nice"
+            android:textColor="@color/black" />
+
+    </RelativeLayout>
+
+    <!--老师评论-->
+    <RelativeLayout
+        android:id="@+id/rlTeacher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/ivTeacherHead"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_marginRight="4dp"
+            android:src="@drawable/example"
+            app:riv_corner_radius="18dp" />
+
+        <LinearLayout
+            android:id="@+id/llTeacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/ivTeacherHead"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTeacherName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="老师名称"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tvTeacherEvaluateTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="老师评价  08-12  14:00"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvTeacherEvaluate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llTeacher"
+            android:layout_marginTop="12dp"
+            android:text="这个学生上课nice"
+            android:textColor="@color/black" />
+
+    </RelativeLayout>
+
+</LinearLayout>

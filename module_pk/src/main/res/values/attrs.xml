@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--投票按钮-->
+    <declare-styleable name="RaterVoteButton">
+        <attr name="rbHeadResource" format="reference" />
+        <attr name="rbName" format="string" />
+        <!--是否显示头像、名称信息-->
+        <attr name="rbShowInfo" format="boolean"/>
+    </declare-styleable>
+
+    <!--收益布局-->
+    <declare-styleable name="PlayerIncomeView">
+        <attr name="pivHeadResource" format="reference" />
+        <attr name="pivName" format="string" />
+    </declare-styleable>
+
+    <!--点评头像-->
+    <declare-styleable name="RatingHeadView">
+        <attr name="rhvAllTextColor" format="color" />
+        <attr name="rhvHeadResource" format="reference" />
+        <attr name="rhvName" format="string" />
+    </declare-styleable>
+
+    <!--匹配头像-->
+    <declare-styleable name="MatchHeadView">
+        <attr name="mhvMatchHead" format="reference" />
+        <attr name="mhvName" format="string" />
+        <attr name="mhvNameColor" format="color" />
+
+    </declare-styleable>
+
+</resources>

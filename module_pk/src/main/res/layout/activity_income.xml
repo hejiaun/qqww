@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:stv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/translucent_black"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:id="@+id/flIncome"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <com.allen.library.SuperButton
+        android:id="@+id/stvSuer"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="36dp"
+        android:enabled="true"
+        android:text="确定"
+        android:textColor="@color/black"
+        stv:sCornersRadius="8dp"
+        stv:sSelectorNormalColor="#FDD445"
+        stv:sSelectorPressedColor="@color/gray_press"
+        stv:sShapeCornersRadius="8dp"
+        stv:sUseSelector="true" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="4dp">
+
+            <TextView
+                android:id="@+id/tvFollow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/play_icon_guanzhu"
+                android:drawablePadding="2dp"
+                android:gravity="center"
+                android:text="关注\n本场所玩家"
+                android:textColor="@drawable/selector_font_deep_purple"
+                android:textSize="@dimen/fontSize_10sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/lineGray" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="4dp">
+
+            <TextView
+                android:id="@+id/tvSaveSong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/play_icon_baocun"
+                android:drawablePadding="2dp"
+                android:gravity="center"
+                android:text="保存\n两首歌曲"
+                android:textColor="@drawable/selector_font_deep_purple"
+                android:textSize="@dimen/fontSize_10sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/lineGray" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="4dp">
+
+            <TextView
+                android:id="@+id/tvSaveVideo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/play_icon_download"
+                android:gravity="center"
+                android:text="保存\n比赛录像"
+                android:textColor="@drawable/selector_font_deep_purple"
+                android:textSize="@dimen/fontSize_10sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/lineGray" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="4dp">
+
+
+            <TextView
+                android:id="@+id/tvAgain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/play_icon_again"
+                android:drawablePadding="2dp"
+                android:gravity="center"
+                android:text="再来一把"
+                android:textColor="@drawable/selector_font_deep_purple"
+                android:textSize="@dimen/fontSize_10sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

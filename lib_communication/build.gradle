@@ -1,0 +1,20 @@
+apply plugin: 'java-library'
+
+dependencies {
+    implementation project(':lib_common')
+    implementation project(':lib_bean')
+    implementation project(':lib_android_support')
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'org.apache.httpcomponents:httpcore:4.4.10'
+    implementation group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.1'
+    implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.8.1'
+    implementation group: 'org.json', name: 'json', version: "20140107"
+}
+
+sourceCompatibility = "7"
+targetCompatibility = "7"
+//指定编译的编码
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}

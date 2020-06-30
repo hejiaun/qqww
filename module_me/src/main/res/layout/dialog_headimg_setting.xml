@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/listBackground"
+    android:orientation="vertical">
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/stvPhotograph"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:sCenterTextString="拍照" />
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/stvAlbum"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:sCenterTextString="从手机相册选择" />
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/stvHeadimgHistory"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:sCenterTextString="查看历史头像" />
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/stvSaveHeadimg"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:sCenterTextString="保存图片" />
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/stvCancel"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        app:sCenterTextString="取消" />
+
+
+</LinearLayout>

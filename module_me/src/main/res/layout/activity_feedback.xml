@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/statusBar"
+    android:fitsSystemWindows="true">
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/stvTitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:sCenterTextSize="18sp"
+        app:sCenterTextString="问题反馈"
+        app:sLeftIconRes="@drawable/common_btn_huila"
+        app:sUseRipple="false" />
+
+
+    <EditText
+        android:id="@+id/etFeedback"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/shape_border_white_round_8dp"
+        android:elevation="2dp"
+        android:gravity="left|top"
+        android:hint="@string/feedback_tips"
+        android:lineHeight="24dp"
+        android:padding="28dp"
+        android:textSize="14sp"
+        app:layout_constraintHeight_percent="0.4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/stvTitleBar"
+        app:layout_constraintWidth_percent="0.9" />
+
+    <TextView
+        android:id="@+id/tvTips"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/feeback_thank"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etFeedback"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <com.allen.library.SuperButton
+        android:layout_width="0dp"
+        android:layout_height="47dp"
+        android:clickable="true"
+        android:text="提交反馈"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvTips"
+        app:layout_constraintWidth_percent="0.6"
+        app:sCornersRadius="100dp"
+        app:sSelectorNormalColor="#b6b6b6"
+        app:sSelectorPressedColor="@color/gray_press"
+        app:sUseSelector="true" />
+
+</android.support.constraint.ConstraintLayout>

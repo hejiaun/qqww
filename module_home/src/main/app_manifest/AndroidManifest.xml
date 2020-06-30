@@ -1,0 +1,23 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.module_home">
+
+    <application
+        android:name="example.common_base.app.MyApplication"
+        android:theme="@style/AppTheme">
+        <activity android:name=".FirstEntryActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.SearchInHomeActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.HotFightFightActivity"
+            android:launchMode="singleTop" />
+
+    </application>
+
+</manifest>

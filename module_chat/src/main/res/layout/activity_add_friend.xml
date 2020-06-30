@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/statusBar"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_app_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/listBackground"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/selector_white2gray_12dp"
+            android:clickable="true"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@drawable/chat_icon_sousuo"
+                android:drawablePadding="2dp"
+                android:text="搜索"
+                android:textColor="@color/fontGray" />
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/lineGray" />
+        <!--按条件查找朋友-->
+        <example.common_base.widget.FunctionItemView
+            android:id="@+id/fivFindByCondition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:fivLeftIcon="@drawable/chat_find_icon_tiaojianchazhao"
+            app:fivLeftString="按条件查找" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/lineGray" />
+
+        <!--扫一扫-->
+        <example.common_base.widget.FunctionItemView
+            android:id="@+id/fivScan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:fivLeftIcon="@drawable/fing_icon_scan"
+            app:fivLeftString="扫一扫" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/lineGray" />
+        <!--通讯录-->
+        <example.common_base.widget.FunctionItemView
+            android:id="@+id/fivFindByDirectory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:fivLeftIcon="@drawable/chat_find_icom_lianxiren"
+            app:fivLeftString="通讯录好友" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/lineGray" />
+
+
+    </LinearLayout>
+</LinearLayout>

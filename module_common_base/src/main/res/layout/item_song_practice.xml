@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_white2fontgray"
+    android:gravity="center_vertical"
+    android:padding="14dp">
+
+    <ImageView
+        android:id="@+id/iv_songFace"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginRight="6dp"
+        android:src="@drawable/example" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_songName"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:drawablePadding="2dp"
+            android:gravity="center"
+            android:text="拥抱"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tv_songMessageDetial"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="3.9M -五月天"
+            android:textSize="@dimen/fontSize_10sp" />
+
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            style="@style/myRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:isIndicator="true"
+            android:max="5"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:rating="4" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btn_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_border_white_round_4dp"
+        android:clickable="true"
+        android:drawableLeft="@drawable/liangefang_icon_mubiao_n"
+        android:padding="6dp"
+        android:text="列为目标"
+        android:textColor="@drawable/selector_font_deep_purple"
+        android:textSize="@dimen/fontSize_12sp" />
+
+    <TextView
+        android:id="@+id/btn_sing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:background="@drawable/shape_border_white_round_4dp"
+        android:clickable="true"
+        android:padding="6dp"
+        android:text="演唱"
+        android:textColor="@drawable/selector_font_deep_purple"
+        android:textSize="@dimen/fontSize_12sp" />
+
+</LinearLayout>

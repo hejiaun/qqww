@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:padding="8dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="4dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/ivRank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/icon_fensibangdan_diyiming"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvRank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="4"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/ivHead"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_marginRight="2dp"
+            android:src="@drawable/example"
+            app:riv_corner_radius="6dp" />
+
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/tvGoodRate"
+            android:layout_alignTop="@id/tv_name"
+            android:layout_marginBottom="4dp"
+            android:clickable="true"
+            android:drawableLeft="@drawable/icon_fensibangdan_man"
+            android:text="我我我我"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvGoodRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/ivHead"
+            android:layout_marginRight="4dp"
+            android:layout_toRightOf="@id/ivHead"
+            android:background="@drawable/shape_border_white_round_4dp"
+            android:clickable="true"
+            android:padding="2dp"
+            android:text="段位"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_getValidateCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/ivHead"
+            android:layout_toRightOf="@id/tvGoodRate"
+            android:background="@drawable/shape_border_white_round_4dp"
+            android:clickable="true"
+            android:padding="2dp"
+            android:text="星级"
+            android:textSize="14sp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="6dp"
+        android:layout_weight="3"
+        android:gravity="right"
+        android:padding="2dp">
+
+        <ImageView
+            android:id="@+id/iv_musicCoin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="6dp"
+            android:src="@drawable/icon_yinyuebi" />
+
+        <ImageView
+            android:id="@+id/tvGift"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_musicCoin"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="6dp"
+            android:src="@drawable/icon_fensibangdan_flower" />
+
+        <TextView
+            android:id="@+id/tv_musicCoin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/iv_musicCoin"
+            android:layout_toRightOf="@id/iv_musicCoin"
+            android:text="3333"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_gift"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tvGift"
+            android:layout_toRightOf="@id/tvGift"
+            android:text="5656"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/btn_follow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_border_white_round_4dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="6dp"
+        android:text="关注"
+        android:textColor="@color/black"
+        android:textSize="@dimen/fontSize_16sp" />
+
+</LinearLayout>

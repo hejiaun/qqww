@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/statusBar"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/listBackground"
+        android:orientation="vertical">
+
+        <include layout="@layout/include_app_bar" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="10dp"
+            android:background="@color/lineGray" />
+
+        <example.common_base.widget.FunctionItemView
+            android:id="@+id/fivChangePassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:fivLeftString="修改密码"
+            app:fivRightIcon="@drawable/common_btn_zhankai" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/lineGray" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="10dp"
+            android:background="@color/lineGray" />
+
+        <example.common_base.widget.FunctionItemView
+            android:id="@+id/fivPhoneBinding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:fivLeftString="绑定手机"
+            app:fivRightIcon="@drawable/common_btn_zhankai" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/lineGray" />
+
+        <example.common_base.widget.FunctionItemView
+            android:id="@+id/fivEmailBinding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:fivLeftString="绑定邮箱"
+            app:fivRightIcon="@drawable/common_btn_zhankai" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/lineGray" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="10dp"
+            android:background="@color/lineGray" />
+
+        <example.common_base.widget.FunctionItemView
+            android:id="@+id/fivClearCache"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:fivLeftString="清理缓存"
+            app:fivRightIcon="@drawable/common_btn_zhankai" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/lineGray" />
+
+
+        <example.common_base.widget.FunctionItemView
+            android:id="@+id/fivFeedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:fivLeftString="问题反馈"
+            app:fivRightIcon="@drawable/common_btn_zhankai" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/lineGray" />
+
+        <example.common_base.widget.FunctionItemView
+            android:id="@+id/fivAboutUs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:fivLeftString="关于我们"
+            app:fivRightIcon="@drawable/common_btn_zhankai" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/lineGray" />
+
+        <example.common_base.widget.FunctionItemView
+            android:id="@+id/fivBlackList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:fivLeftString="黑名单管理"
+            app:fivRightIcon="@drawable/common_btn_zhankai" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/lineGray" />
+
+        <com.allen.library.SuperButton
+            android:id="@+id/btnExit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:clickable="true"
+            android:text="退出登陆"
+            android:textColor="@color/white"
+            app:sCornersRadius="100dp"
+            app:sSelectorNormalColor="@color/red_select"
+            app:sSelectorPressedColor="@color/gray_press"
+            app:sUseSelector="true" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--可选择图片-->
+    <declare-styleable name="SelectImageView">
+        <attr name="imageSize" format="dimension" />
+        <attr name="imageSrc" format="reference" />
+        <attr name="imageCorner" format="float" />
+    </declare-styleable>
+    <!--带名称的头像-->
+    <declare-styleable name="HeadAndNameView">
+        <attr name="text" format="string" />
+        <attr name="headSize" format="dimension" />
+        <attr name="headCorner" format="dimension" />
+        <attr name="textSize" format="integer" />
+        <attr name="textColor" format="color" />
+        <attr name="headBorderWidth" format="dimension" />
+        <attr name="headBorderColor" format="color" />
+        <attr name="headImage" format="reference" />
+    </declare-styleable>
+
+    <!--带边框的字体-->
+    <declare-styleable name="BorderTextViewStyle">
+        <attr name="soildTextColor" format="color" />
+        <attr name="borderTextColor" format="color" />
+        <attr name="borderWidth" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="FunctionItemView">
+        <attr name="fivLeftIcon" format="reference" />
+        <attr name="fivRightIcon" format="reference" />
+        <attr name="fivLeftString" format="string" />
+        <attr name="fivRightString" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="CommonShapeButton">
+        <!--shape模式-->
+        <attr name="csb_shapeMode" format="enum">
+            <enum name="rectangle" value="0" />
+            <enum name="oval" value="1" />
+            <enum name="line" value="2" />
+            <enum name="ring" value="3" />
+        </attr>
+        <!--填充颜色-->
+        <attr name="csb_fillColor" format="color" />
+        <!--按压颜色-->
+        <attr name="csb_pressedColor" format="color" />
+        <!--描边颜色-->
+        <attr name="csb_strokeColor" format="color" />
+        <!--描边宽度-->
+        <attr name="csb_strokeWidth" format="dimension" />
+        <!--圆角大小-->
+        <attr name="csb_cornerRadius" format="dimension" />
+        <!--圆角位置-->
+        <attr name="csb_cornerPosition">
+            <flag name="topLeft" value="1" />
+            <flag name="topRight" value="2" />
+            <flag name="bottomRight" value="4" />
+            <flag name="bottomLeft" value="8" />
+        </attr>
+        <!--是否开启动效-->
+        <attr name="csb_activeEnable" format="boolean" />
+        <!--drawable位置-->
+        <attr name="csb_drawablePosition" format="enum">
+            <enum name="left" value="0" />
+            <enum name="top" value="1" />
+            <enum name="right" value="2" />
+            <enum name="bottom" value="3" />
+        </attr>
+        <!--渐变开始颜色-->
+        <attr name="csb_startColor" format="color" />
+        <!--渐变结束颜色-->
+        <attr name="csb_endColor" format="color" />
+        <!--渐变方向-->
+        <attr name="csb_orientation" format="enum">
+            <enum name="TOP_BOTTOM" value="0" />
+            <enum name="LEFT_RIGHT" value="1" />
+        </attr>
+    </declare-styleable>
+
+</resources>

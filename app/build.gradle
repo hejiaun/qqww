@@ -1,0 +1,66 @@
+apply plugin: 'com.android.application'
+//GreenDao的配置
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.example.administrator.shengdoushi"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        //ARouter的配置
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [AROUTER_MODULE_NAME: project.getName()]
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+    }
+
+    testOptions {
+        unitTests.returnDefaultValues = true
+    }
+
+
+}
+
+dependencies {
+    implementation project(':module_common_base')
+    //自动化加载模块
+    if (isNeedHomeModule.toBoolean()) {
+        implementation project(':module_home')
+    }
+    if (isNeedChatModule.toBoolean()) {
+        implementation project(':module_chat')
+    }
+    if (isNeedMeModule.toBoolean()) {
+        implementation project(':module_me')
+    }
+    if (isNeedFindModule.toBoolean()) {
+        implementation project(':module_find')
+    }
+    if (isNeedAccountModule.toBoolean()) {
+        implementation project(':module_account')
+    }
+    annotationProcessor "com.alibaba:arouter-compiler:1.2.1"
+    //黄油刀注解
+}
+
+
+

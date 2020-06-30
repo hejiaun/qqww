@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_head"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/ivHead"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:src="@drawable/example"
+        app:riv_border_color="@color/black"
+        app:riv_border_width="1px"
+        app:riv_corner_radius="44dp" />
+
+    <TextView
+        android:id="@+id/tv_level"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_alignBottom="@id/ivHead"
+        android:layout_alignRight="@id/ivHead"
+        android:background="@drawable/shape_round_white_border_red_corner8dp"
+        android:gravity="center"
+        android:text="55"
+        android:textColor="#ff4b5a"
+        android:textSize="8sp" />
+
+</RelativeLayout>

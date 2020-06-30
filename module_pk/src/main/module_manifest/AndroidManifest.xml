@@ -1,0 +1,47 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.module_pk">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application>
+        <activity
+            android:name=".activity.PkRaterActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:windowSoftInputMode="adjustNothing"
+            android:name=".activity.PkRaterMatchActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:windowSoftInputMode="adjustNothing"
+            android:name=".activity.PkSingerMatchActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.SearchSongInPkActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:windowSoftInputMode="adjustNothing"
+            android:name=".activity.PkSingerActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:windowSoftInputMode="adjustNothing"
+            android:name=".activity.PkModeActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:windowSoftInputMode="adjustNothing"
+            android:name=".activity.PkLoadingActivity"
+            android:launchMode="singleInstance" />
+        <activity
+            android:windowSoftInputMode="adjustNothing"
+            android:name=".activity.IncomeActivity"
+            android:theme="@style/TransparentActivityTheme" />
+        <activity
+            android:name=".activity.PkShareActivity"
+            android:windowSoftInputMode="adjustNothing" />
+
+
+    </application>
+</manifest>

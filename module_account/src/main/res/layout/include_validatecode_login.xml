@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llValidateCodeLogin"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:background="@drawable/login_icon_tel" />
+
+            <EditText
+                android:id="@+id/et_userName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:digits="@string/numberAndLetter"
+                android:gravity="bottom"
+                android:hint="手机号"
+                android:maxLength="20"
+                android:singleLine="true"
+                android:textSize="@dimen/fontSize_16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+
+            android:layout_height="1px"
+            android:layout_marginTop="1dp"
+            android:background="@color/lineGray" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:background="@drawable/login_icon_yanzhengma" />
+
+            <EditText
+                android:id="@+id/et_validateCode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:digits="@string/numberAndLetter"
+                android:gravity="bottom"
+                android:hint="验证码"
+                android:inputType="number"
+                android:maxLength="20"
+                android:singleLine="true"
+                android:textSize="@dimen/fontSize_16sp" />
+
+            <TextView
+                android:id="@+id/tv_getValidateCode"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape_border_black"
+                android:clickable="true"
+                android:gravity="center"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:text="获取验证码"
+                android:textColor="@drawable/selector_font_deep_purple"
+                android:textSize="@dimen/fontSize_12sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="1dp"
+            android:background="@color/lineGray" />
+
+
+    </LinearLayout>
+</LinearLayout>

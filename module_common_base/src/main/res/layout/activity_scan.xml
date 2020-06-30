@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.journeyapps.barcodescanner.DecoratedBarcodeView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dbv"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:zxing_framing_rect_height="260dp"
+    app:zxing_framing_rect_width="260dp"
+    app:zxing_preview_scaling_strategy="fitCenter"
+    app:zxing_use_texture_view="true">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@color/transparent"
+        android:gravity="center_vertical"
+        android:minHeight="56dp"
+        app:contentInsetEnd="8dp"
+        app:contentInsetStart="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:src="@drawable/icon_mine_ziliao_labelbar_back" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="扫一扫"
+                android:textColor="@color/white"
+                android:textSize="@dimen/actionTitleSize_18sp" />
+
+            <TextView
+                android:id="@+id/tv_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:clickable="true"
+                android:text="相册"
+                android:textColor="@drawable/selector_font_shallow" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvVisitingCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="60dp"
+            android:clickable="true"
+            android:text="我的名片"
+            android:textColor="@drawable/selector_font_shallow"
+            android:textSize="18sp" />
+
+
+    </RelativeLayout>
+
+</com.journeyapps.barcodescanner.DecoratedBarcodeView>
+

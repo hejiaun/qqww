@@ -1,0 +1,148 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+    <style name="TransparentActivityTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="famousImageViewStyle">
+        <item name="android:clickable">true</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_width">60dp</item>
+        <item name="riv_border_color">#707070</item>
+        <item name="riv_border_width">1dp</item>
+        <item name="riv_corner_radius">4dp</item>
+    </style>
+
+    <style name="horizontalWeight">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="verticalWeight">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:height">0dp</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="homeMenuItem">
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/selector_learn</item>
+        <item name="android:layout_width">@dimen/famousListImageSize_44dp</item>
+        <item name="android:layout_height">@dimen/famousListImageSize_44dp</item>
+    </style>
+
+    <style name="cardRoundWhite">
+        <item name="android:elevation">2dp</item>
+        <item name="android:background">@drawable/shape_card_round_white</item>
+    </style>
+
+    <style name="myRatingBar">
+        <item name="android:progressDrawable">@drawable/layer_list_star</item>
+        <item name="android:numColumns">1</item>
+    </style>
+
+    <style name="ToolbarStyle" parent="Base.Widget.AppCompat.ActionBar">
+        <item name="android:minHeight">@dimen/myActionBarSize_40dp</item>
+    </style>
+
+    <style name="SearchTagStyle">
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">6dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:textSize">@dimen/fontSize_12sp</item>
+        <item name="android:background">@drawable/shape_gray_round_10dp</item>
+    </style>
+
+    <style name="ScreenTagStyle">
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:paddingLeft">6dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:paddingRight">6dp</item>
+        <item name="android:textSize">@dimen/fontSize_12sp</item>
+        <item name="android:background">@drawable/shape_gray_round_10dp</item>
+    </style>
+
+    <style name="MySeekBarStyle">
+        <item name="android:maxHeight">2dp</item>
+        <item name="android:progressDrawable">@drawable/layer_list_seekbar</item>
+        <item name="android:thumb">@drawable/gequxiangqing_btn_jindutiao</item>
+    </style>
+
+    <!--全屏背景半透明 dialog-->
+    <style name="FullScreenDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="FullWidthDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowBackground">@color/white</item>
+        <!--<item name="android:background">@color/transparent</item>-->
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="LoadingDialog" parent="@android:style/Theme.Holo.Dialog.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="Theme.ActivityDialogStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--&lt;!&ndash;是否半透明&ndash;&gt;-->
+        <!--<item name="android:windowIsTranslucent">true</item>-->
+        <!--&lt;!&ndash;设置dialog的背景&ndash;&gt;-->
+        <!--<item name="android:windowBackground">@color/white</item>-->
+        <!--&lt;!&ndash;背景是否模糊显示&ndash;&gt;-->
+        <!--<item name="android:backgroundDimEnabled">true</item>-->
+        <!--&lt;!&ndash;设置窗口内容不覆盖&ndash;&gt;-->
+        <!--<item name="android:windowContentOverlay">@null</item>-->
+        <!--&lt;!&ndash;点击空白地方关闭&ndash;&gt;-->
+        <!--<item name="android:windowCloseOnTouchOutside">false</item>-->
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:layout_width">match_parent</item>
+        <!--&lt;!&ndash;设置动画，在这里使用让它继承系统的Animation.Dialog&ndash;&gt;-->
+        <!--<item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>-->
+    </style>
+
+    <!-- 自定义按钮样式 -->
+    <style name="CommonShapeButtonStyle" parent="@style/Widget.AppCompat.Button">
+        <item name="android:minWidth">0dp</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:padding">0dp</item>
+    </style>
+
+</resources>

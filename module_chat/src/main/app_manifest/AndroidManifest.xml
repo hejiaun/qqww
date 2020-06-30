@@ -1,0 +1,63 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.module_chat">
+
+    <application
+        android:name="example.common_base.app.MyApplication"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.example.module_chat.FirstEntryActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.AddFriendsActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.CameraActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.ChatActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activity.ChatComplaintActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.ChatGroupDetailsActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.ChatOneOnOneDetailsActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.ChatSearchActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.FindByConditionActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.SearchChatRecordActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.SetChatBackground"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.UpdateGroupNoticeActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.SelectBackgroundActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.AddFriendByConditionActivity"
+            android:launchMode="singleTop" />
+
+        <activity android:name=".activity.AddFriendByDirectory"
+            android:launchMode="singleTop"/>
+
+        <activity
+            android:name=".activity.AddFriendByConditionSearchResult"
+            android:launchMode="singleTop" />
+
+    </application>
+
+</manifest>

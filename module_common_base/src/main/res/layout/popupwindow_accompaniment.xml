@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvScan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_white2fontgray"
+        android:clickable="true"
+        android:drawableLeft="@drawable/icon_flower"
+        android:drawablePadding="2dp"
+        android:paddingLeft="12dp"
+        android:paddingTop="8dp"
+        android:paddingRight="12dp"
+        android:paddingBottom="8dp"
+        android:text="扫描本地文件"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvSort"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_white2fontgray"
+        android:clickable="true"
+        android:drawableLeft="@drawable/icon_flower"
+        android:drawablePadding="2dp"
+        android:paddingLeft="12dp"
+        android:paddingTop="8dp"
+        android:paddingRight="12dp"
+        android:paddingBottom="8dp"
+        android:text="选择排序方式"
+        android:textSize="16sp" />
+</LinearLayout>

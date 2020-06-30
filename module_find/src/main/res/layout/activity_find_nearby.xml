@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/statusBar"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/statusBar"
+        android:minHeight="@dimen/myActionBarSize_40dp"
+        android:padding="2dp">
+
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:clickable="true"
+            android:src="@drawable/icon_mine_ziliao_labelbar_back" />
+
+
+        <com.flyco.tablayout.SegmentTabLayout
+            android:id="@+id/stl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            tl:tl_bar_color="@color/statusBar"
+            tl:tl_indicator_color="@color/white"
+            tl:tl_indicator_corner_radius="4dp"
+            tl:tl_tab_padding="20dp"
+            tl:tl_textSelectColor="@color/statusBar"
+            tl:tl_textUnselectColor="@color/white"
+            tl:tl_textsize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:text="地图模式"
+            android:textColor="@drawable/selector_font_shallow"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <com.youth.banner.Banner
+        android:background="@color/white"
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="140dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <org.angmarch.views.NiceSpinner
+            android:id="@+id/sp_course"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/shallowGray" />
+
+        <org.angmarch.views.NiceSpinner
+            android:id="@+id/sp_locate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/shallowGray" />
+
+        <org.angmarch.views.NiceSpinner
+            android:id="@+id/sp_underground"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/shallowGray" />
+
+        <org.angmarch.views.NiceSpinner
+            android:id="@+id/sp_other"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:autofillHints="444" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/shallowGray" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srl"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rcv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/listBackground" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

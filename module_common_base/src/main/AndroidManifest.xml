@@ -1,0 +1,19 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.common_base">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <application>
+        <activity
+            android:name="example.common_base.activity.ScanActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="example.common_base.activity.VisitingCardActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="example.common_base.main.MainActivity"
+            android:launchMode="singleTop" />
+        <activity android:name="example.common_base.crash.CrashActivity" />
+
+        <activity android:name="example.common_base.activity.ReportActivity" />
+    </application>
+</manifest>

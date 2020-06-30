@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2D2E2F"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/stvTitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbarHeight"
+        android:elevation="2dp"
+        app:sCenterTextColor="@color/white"
+        app:sCenterTextSize="18sp"
+        app:sCenterTextString="个人头像"
+        app:sDividerLineHeight="0dp"
+        app:sLeftIconRes="@drawable/picture_back"
+        app:sRightIconRes="@drawable/ic_more_horiz_black_24dp"
+        app:sUseRipple="false" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#303132">
+
+        <com.bm.library.PhotoView
+            android:id="@+id/pv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/xueyou"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/stvTitleBar" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

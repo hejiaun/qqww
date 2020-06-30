@@ -1,0 +1,26 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.module_find">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name="example.common_base.app.MyApplication"
+        android:theme="@style/AppTheme">
+        <activity android:name=".FirstEntryActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.FindNearbyActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.MusicCircleActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.MusicCircleNewsActivity"
+            android:launchMode="singleInstance" />
+    </application>
+
+</manifest>

@@ -1,0 +1,199 @@
+apply plugin: 'com.android.library'
+//GreenDao的配置
+apply plugin: 'org.greenrobot.greendao'
+//黄油刀控件注解配置
+
+android {
+    compileSdkVersion 28
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        //使用vector的配置
+        vectorDrawables.useSupportLibrary = true
+
+        //ARouter的配置
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [AROUTER_MODULE_NAME: project.getName()]
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    lintOptions {
+        abortOnError false //不在error情况下中断
+        disable 'MissingTranslation' //无视字符串缺少本地化的情况
+        disable 'ExtraTranslation'//无视多做了本地化的字符串
+    }
+
+}
+
+dependencies {
+    //
+    api project(':lib_android_support')
+    api project(':lib_bean')
+    api project(':lib_common')
+    api project(':lib_communication')
+    api project(':lib_vfighter_account_api')
+    api project(':lib_vfighter_songlib_api')
+    api project(':lib_vfighter_usercenter_api')
+    api project(':lib_vfighter_comment_api')
+
+    //集成支付库
+    api project(':lib_pay')
+
+    //集成分享库
+    api project(':lib_share')
+
+    //集成媒体库
+    api project(':lib_media')
+
+    //集成所有jar包
+    api fileTree(include: ['*.jar'], dir: 'libs')
+
+    //集成所有aar包
+    api fileTree(include: ['*.aar'], dir: 'libs')
+
+    //lottie动画
+    api 'com.airbnb.android:lottie:2.7.0'
+
+    //页面加载状态显示库
+    api 'com.billy.android:gloading:1.0.0'
+
+    //滑动布局库
+    api 'com.daimajia.swipelayout:library:1.2.0'
+
+    //城市选择器
+    api 'liji.library.dev:citypickerview:4.1.2'
+
+    //noinspection GradleCompatible
+    api 'com.android.support:support-v4:28.0.0'
+
+    //状态栏工具库
+    api 'com.jaeger.statusbarutil:library:1.5.1'
+    api 'com.android.support:appcompat-v7:28.0.0'
+
+    //弹性布局
+    api 'com.android.support.constraint:constraint-layout:1.1.0'
+    api 'junit:junit:4.12'
+
+    //Okhttp网络请求库
+    api 'com.squareup.okhttp3:okhttp:3.10.0'
+
+    //超级TextView
+    api 'com.github.lygttpod:SuperTextView:2.1.8'
+
+    //图片选择器
+    api 'com.github.LuckSiege.PictureSelector:picture_library:v2.2.3'
+
+    //标签库
+    api 'me.gujun.android.taggroup:library:1.4@aar'
+
+    //
+    api 'com.github.arcadefire:nice-spinner:1.3.4'
+
+    //弹性布局
+    api 'com.google.android:flexbox:1.0.0'
+    api 'com.contrarywind:Android-PickerView:4.1.3'
+
+    //歌词View
+    api 'me.wcy:lrcview:2.0.1'
+
+    //圆形ImageView
+    api 'com.makeramen:roundedimageview:2.3.0'
+
+    //卡片布局控件
+    api 'com.android.support:cardview-v7:28.0.0-alpha1'
+
+    //菜单栏，导航栏
+    api 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
+
+    //轮播图
+    api 'com.youth.banner:banner:1.4.10'
+
+    //手势缩放图片控件
+    api 'com.bm.photoview:library:1.4.1'
+
+    //九宫格图片控件
+    api 'com.lqr.ninegridimageview:library:1.0.0'
+
+    //控件注入库
+    api 'com.jakewharton:butterknife:8.8.1'
+    //控件注入注解
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+
+    //事件总线发送、处理库
+    api 'org.greenrobot:eventbus:3.1.1'
+
+    //页面路由库
+    api 'com.alibaba:arouter-api:1.4.0'
+    //页面路由注解
+    annotationProcessor "com.alibaba:arouter-compiler:1.2.1"
+
+    //二维码扫描、生成库
+    api 'com.journeyapps:zxing-android-embedded:3.6.0'
+    api 'com.google.zxing:core:3.3.0'
+
+    //RecyclerView适配器助手，可实现多种列表效果
+    api 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.41'
+
+    //异步任务处理
+    api 'io.reactivex.rxjava2:rxjava:2.2.1'
+    api 'io.reactivex:rxandroid:1.2.1'
+
+    //图片处理库
+    api 'com.squareup.picasso:picasso:2.71828'
+    api 'com.github.bumptech.glide:glide:4.7.1'
+
+    //数据库操作库
+    api 'org.greenrobot:greendao:3.2.2'
+
+    //仿微信小视频库
+    api 'cjt.library.wheel:camera:1.1.9'
+
+    //Json数据转换库
+    api 'com.google.code.gson:gson:2.8.5'
+
+    //网络请求库
+    api 'org.apache.httpcomponents:httpclient:4.1'
+
+    //表情面板
+    api 'com.github.w446108264:XhsEmoticonsKeyboard:2.0.4'
+
+    //表情
+    api 'io.github.rockerhieu:emojiconize:1.0.0'
+
+    //
+    api 'com.mabeijianxi:jianxiexpression:2.2.8'
+
+    //标尺选择器（选择身高体重）
+    api 'com.github.superSp:RulerView:v1.4'
+
+    //滚轮选择器
+    api 'cn.aigestudio.wheelpicker:WheelPicker:1.1.2'
+
+    //处理表情面板和输入法切换的库
+    api 'cn.dreamtobe.kpswitch:library:1.6.1'
+
+    //九宫二图片
+    api 'com.lzy.widget:ninegridview:0.2.0'
+
+}
+
+greendao {
+    schemaVersion 1//数据库版本号
+    daoPackage 'example.common_base.dao'//设置DaoMaster、DaoSession、Dao包名
+    targetGenDir 'src/main/java'//设置DaoMaster、DaoSession、Dao目录
+    //targetGenDirTest：设置生成单元测试目录
+    //generateTests：设置自动生成单元测试用例
+}

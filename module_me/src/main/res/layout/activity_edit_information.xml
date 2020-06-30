@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/statusBar"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_app_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/listBackground"
+        android:orientation="vertical">
+
+        <!--状态-->
+        <example.common_base.widget.FunctionItemView
+            android:id="@+id/fivState"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            app:fivLeftString="状态"
+            app:fivRightIcon="@drawable/common_btn_zhankai"
+            app:fivRightString="求撩" />
+
+        <!--状态说明-->
+        <example.common_base.widget.FunctionItemView
+            android:id="@+id/fivStateDes"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="1dp"
+            android:clickable="true"
+            app:fivLeftString="状态说明"
+            app:fivRightIcon="@drawable/common_btn_zhankai"
+            app:fivRightString="查户口的滚犊子" />
+
+        <!--昵称-->
+        <example.common_base.widget.FunctionItemView
+            android:id="@+id/fiv_nickname"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="18dp"
+            android:clickable="true"
+            app:fivLeftString="昵称"
+            app:fivRightIcon="@drawable/common_btn_zhankai"
+            app:fivRightString="我" />
+
+        <!--生日-->
+        <example.common_base.widget.FunctionItemView
+            android:id="@+id/fiv_birthday"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="1dp"
+            android:clickable="true"
+            app:fivLeftString="生日"
+            app:fivRightIcon="@drawable/common_btn_zhankai"
+            app:fivRightString="1997-01-17" />
+
+        <!--性别-->
+        <example.common_base.widget.FunctionItemView
+            android:id="@+id/fiv_sex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:clickable="true"
+            app:fivLeftString="性别"
+            app:fivRightIcon="@drawable/common_btn_zhankai"
+            app:fivRightString="男" />
+
+        <!--身高体重-->
+        <example.common_base.widget.FunctionItemView
+            android:id="@+id/fiv_heightAndWeight"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="1dp"
+            android:clickable="true"
+            app:fivLeftString="身高体重"
+            app:fivRightIcon="@drawable/common_btn_zhankai"
+            app:fivRightString="180cm/70kg" />
+
+        <!--性格-->
+        <example.common_base.widget.FunctionItemView
+            android:id="@+id/fiv_charater"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="1dp"
+            android:clickable="true"
+            app:fivLeftString="性格"
+            app:fivRightIcon="@drawable/common_btn_zhankai"
+            app:fivRightString="内向、文静" />
+
+
+        <!--地址-->
+        <example.common_base.widget.FunctionItemView
+            android:id="@+id/fiv_address"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="18dp"
+            android:clickable="true"
+            app:fivLeftString="地址"
+            app:fivRightIcon="@drawable/common_btn_zhankai"
+            app:fivRightString="广东省广州市天河区" />
+
+        <!--食物-->
+        <example.common_base.widget.FunctionItemView
+            android:id="@+id/fiv_food"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="1dp"
+            android:clickable="true"
+            app:fivLeftString="食物"
+            app:fivRightIcon="@drawable/common_btn_zhankai"
+            app:fivRightString="汉堡王" />
+
+        <!--电影-->
+        <example.common_base.widget.FunctionItemView
+            android:id="@+id/fiv_movie"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="1dp"
+            android:clickable="true"
+            app:fivLeftString="电影"
+            app:fivRightIcon="@drawable/common_btn_zhankai"
+            app:fivRightString="闻香识女人" />
+
+        <!--其他-->
+        <example.common_base.widget.FunctionItemView
+            android:id="@+id/fiv_others"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="1dp"
+            android:clickable="true"
+            app:fivLeftString="其他"
+            app:fivRightIcon="@drawable/common_btn_zhankai"
+            app:fivRightString="广东省广州市天河区" />
+
+    </LinearLayout>
+
+</LinearLayout>

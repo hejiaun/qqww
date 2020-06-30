@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingLeft="20dp"
+    android:paddingTop="14dp"
+    android:paddingRight="20dp"
+    android:paddingBottom="14dp">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="22dp"
+        android:text="每日签到"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvSignState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvTitle"
+        android:layout_marginLeft="4dp"
+        android:layout_toRightOf="@id/tvTitle"
+        android:text="已经连续签到3天"
+        android:textColor="@color/fontGray"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tvFlowerIncome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTitle"
+        android:drawableLeft="@drawable/icon_fensibangdan_flower"
+        android:text="+3"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTitle"
+        android:layout_alignLeft="@id/tvSignState"
+        android:drawableLeft="@drawable/icon_fensibangdan_flower"
+        android:text="+25"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/btnDo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="12dp"
+        android:background="@drawable/shape_border_red_round_4dp"
+        android:clickable="true"
+        android:padding="6dp"
+        android:text="签到"
+        android:textColor="@drawable/selector_font_shallow"
+        android:textSize="@dimen/fontSize_12sp" />
+
+</RelativeLayout>

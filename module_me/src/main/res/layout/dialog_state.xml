@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/listBackground"
+    android:orientation="vertical">
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/stv1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:sCenterTextString="求撩"
+        app:sUseRipple="true" />
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/stv2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:sCenterTextString="待机" />
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/stv3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:sCenterTextString="热恋" />
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/stvCancel"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        app:sCenterTextString="取消" />
+
+
+</LinearLayout>

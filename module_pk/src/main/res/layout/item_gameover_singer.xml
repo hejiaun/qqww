@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingTop="6dp"
+    android:paddingBottom="6dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/ivSingerHead"
+            android:scaleType="centerCrop"
+            app:riv_border_color="@color/fontGray"
+            app:riv_border_width="1dp"
+            android:layout_width="32dp"
+            android:layout_height="34dp"
+            android:src="@drawable/example"
+            app:riv_corner_radius="1000dp" />
+
+        <TextView
+            android:id="@+id/tvSingerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="名称"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivRankLevel"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/gold1" />
+
+        <TextView
+            android:id="@+id/tvRankLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="黄金1"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvPopularity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:gravity="center">
+
+        <example.common_base.widget.BorderTextView
+            android:id="@+id/tvWin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="胜利"
+            android:textColor="@color/white"
+            app:borderTextColor="@color/red_select"
+            app:borderWidth="4dp" />
+
+        <example.common_base.widget.BorderTextView
+            android:id="@+id/tvLose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="失败"
+            android:textColor="@color/white"
+            app:borderTextColor="@color/statusBar"
+            app:borderWidth="4dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tvFollow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_follow"
+            android:clickable="true"
+            android:paddingLeft="6dp"
+            android:paddingTop="2dp"
+            android:paddingRight="6dp"
+            android:paddingBottom="2dp"
+            android:text="跟随"
+            android:textColor="@drawable/selector_font_shallow"
+            android:textSize="@dimen/sp_14" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

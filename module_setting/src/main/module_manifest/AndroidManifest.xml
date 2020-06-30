@@ -1,0 +1,19 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.module_setting">
+
+    <application>
+        <activity android:name=".activity.BlackListActivity"
+            android:launchMode="singleTop"/>
+        <activity
+            android:name=".activity.SettingAccountActivity"
+            android:launchMode="singleTop" />
+        <activity android:name=".activity.SettingActivity"
+            android:launchMode="singleTop"/>
+        <activity
+            android:name=".activity.SettingMessageActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.SettingPrivacyActivity"
+            android:launchMode="singleTop" />
+    </application>
+</manifest>

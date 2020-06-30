@@ -1,0 +1,118 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.module_me">
+
+    <application
+        android:name="example.common_base.app.MyApplication"
+        android:theme="@style/AppTheme">
+        <activity android:name=".FirstEntryActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.OthersInformationActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.CollectionActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.CourseActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.EditAddressActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.EditBrithdayActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.EditCharacterActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.EditFoodActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.EditHeightAndWeightActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.EditInformationActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.EditMovieActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.EditNicknameActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.EditOthersActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.EmoticonActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.WalletActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.MyInformationActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.NewListActivity"
+            android:launchMode="singleTop" />
+
+        <activity
+            android:name=".activity.PopularityActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.FollowActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.FansActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.ListenerActivity"
+            android:launchMode="singleTop" />
+
+        <activity
+            android:name=".activity.SettingActivity"
+            android:launchMode="singleTop" />
+
+        <activity
+            android:name=".activity.HeadimgSettingActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.ChangePasswordActivity"
+            android:launchMode="singleTop" />
+
+        <activity
+            android:name=".activity.FeedBackActivity"
+            android:launchMode="singleTop" />
+
+        <activity
+            android:name=".activity.AboutUsActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.BlackListActivity"
+            android:launchMode="singleTop" />
+
+        <activity
+            android:name=".activity.BindPhoneActivity"
+            android:launchMode="singleTop" />
+
+        <activity
+            android:name=".activity.BindEmailActivity"
+            android:launchMode="singleTop" />
+
+        <activity
+            android:name=".activity.ClearCacheActivity"
+            android:launchMode="singleTop" />
+
+        <activity
+            android:name=".activity.WorkActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.StateDesActivity"
+            android:launchMode="singleTop" />
+
+    </application>
+
+</manifest>

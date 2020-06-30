@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">module_me</string>
+    <string name="feedback_tips">您是否在体验软件的过程中遇到各种奇怪的BUG?又或者是您对我们的产品有宝贵的建议?尽管提出来吧!我们将以最快的速度处理问题，全心全意为您服务。</string>
+    <string name="feeback_thank">提交反馈之后,我们会通过系统消息告诉您反馈的处理结果,感谢您使用我们的产品!</string>
+    <string name="about_us_protocol">《声斗士软件许可服务协议》</string>
+    <string name="about_us_statement1">声斗士信息科技有限公司\t版权所有</string>
+    <string name="about_us_statement2">xxxxxxxxxxxxxxxxxxxx</string>
+</resources>
